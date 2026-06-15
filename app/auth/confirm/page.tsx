@@ -1,0 +1,10 @@
+import { Suspense } from 'react'
+import AuthHandler from '../auth-handler'
+
+export default function AuthConfirmPage() {
+  return (
+    <Suspense fallback={<p className="flex min-h-screen items-center justify-center">Confirming your email...</p>}>
+      <AuthHandler />
+    </Suspense>
+  )
+}
